@@ -1,9 +1,8 @@
 package com.desmond.parallaxviewpager;
 
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.widget.AbsListView;
 import android.widget.ScrollView;
@@ -11,7 +10,7 @@ import android.widget.ScrollView;
 /**
  * Created by desmond on 1/6/15.
  */
-public abstract class ParallaxViewPagerBaseActivity extends AppCompatActivity implements ScrollTabHolder {
+public abstract class ParallaxViewPagerBaseActivity extends FragmentActivity implements ScrollTabHolder {
 
     public static final String TAG = ParallaxViewPagerBaseActivity.class.getSimpleName();
 

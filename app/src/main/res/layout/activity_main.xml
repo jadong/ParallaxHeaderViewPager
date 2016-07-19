@@ -3,17 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/parent_view"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
     <android.support.v4.view.ViewPager
         android:id="@+id/view_pager"
+        android:layout_below="@+id/tv_empty"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="QQQQQQQQQQQQQQQQQQ"
+        android:layout_height="50dp" />
 
     <LinearLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
+        android:layout_below="@+id/tv_empty"
         android:layout_height="@dimen/header_height"
         android:orientation="vertical">
 
@@ -35,5 +43,13 @@
             app:tabBackgroundTextViewId="@+id/tab_textview"/>
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="QQQQQQQQQQQQQQQQQQ"
+        android:background="#ffffff"
+        android:layout_height="50dp" />
 
 </RelativeLayout>
